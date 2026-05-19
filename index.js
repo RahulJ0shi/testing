@@ -12,4 +12,10 @@ app.post('/api/account', (req, res) => {
     });
 });
 
+
+app.get('/', (req, res) => {
+    res.send('Hello from testing app');
+});
+
+
 app.listen(3000, () => console.log('API running...'));
