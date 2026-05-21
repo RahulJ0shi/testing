@@ -6,6 +6,10 @@ app.use(express.json());
 app.post('/api/account', (req, res) => {
     console.log("Received from Salesforce:", req.body);
 
+    
+    console.log("=== HEADERS ===");
+    console.log(req.headers);
+
     // Example processing
     res.status(200).json({
         message: "Account received successfully"
